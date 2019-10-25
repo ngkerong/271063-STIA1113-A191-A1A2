@@ -1,0 +1,80 @@
+```java
+/*Name:Ng Ke Rong*/
+/*No.Matrik:271063*/
+
+import java.util.Scanner;
+
+public class myCarLoan {
+    
+    public static void main(String[] args){
+        
+        Scanner input = new Scanner(System.in);
+        
+        String format = "\n-%20s-%25s-%23s-%17s\n";
+        float A,B,C,D;
+        
+        /*Display*/
+        System.out.println("CAR LOAN CALCULATOR");
+        
+        /*Input Car Loan,Down Payment, Loan Period and Interest Rate*/
+        System.out.print("Car Price(RM):");
+        A = input.nextFloat();
+        System.out.print("Down Payment(RM):");
+        B = input.nextFloat();
+        System.out.print("Loan Period(Years):");
+        C = input.nextFloat();
+        System.out.print("Interest Rate(%):");
+        D = input.nextFloat();
+        
+        /*Looping*/
+        if(A >= 30000.00 & B >= 0.00 & C >= 5.00 & C <= 9.00 & D >= 3.00 & D <= 7 ){
+            
+            /*Call Method*/
+            CalculateLoan(A,B,C,D);
+
+        }else{
+            System.out.println("Error, please enter again.");
+        }
+        
+        input.close();
+    }
+    
+    public static void CalculateLoan(float A, float B, float C, float D ){
+        
+        float Interest,Principal,Repayment,TotalPrinc=0,TotalInte=0,Balance=0;
+        String format1 = "%10s-%15s-%15s-%15s\n",
+        format2 = "%40s\n%28s%.2f\n\n",
+        format3 = "%9s%17.2f%16.2f%17.2f\n";
+        String[] Years = {"1st","2nd","3rd","4th","5th","6th","7th","8th"};
+        byte i = 0;
+        
+        
+        /*Calculate*/
+        Interest = D/100 * (A - B);
+        Principal = (A - B + Interest *C)/C;
+        Repayment = Principal /12;
+        
+        /*Display Repayment*/
+        System.out.printf(format2, "Monthly Repayment","RM",Repayment);
+        
+        /*Display Years, Principal, Interest, Balance*/
+        System.out.printf(format1, "YEARS", "PRINCIPAL", "INTEREST", "BALANCE");
+        
+        /*Looping*/
+        while(C != 0){
+            /*Calculation*/
+            TotalPrinc = Principal + TotalPrinc;
+            TotalInte = Interest + TotalInte;
+            Balance = (Principal * C) - Principal;
+
+            /*Output Years, Principal, Interest, Balance*/
+            System.out.printf(format3, Years[i], TotalPrinc, TotalInte, Balance);
+
+            /*Initialize*/
+            C--;
+            i++;   
+        }
+        
+    }
+}
+```
