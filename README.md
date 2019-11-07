@@ -71,7 +71,7 @@ Calculate Repayment = Principal /12
 	Output Years [i], TotalPrinc, TotalInte and Balance
 	
 	Decrease C by 1
-
+	
 	Increase i by 1
 END WHILE
 
@@ -79,5 +79,10 @@ End Function
 
 End
 
- # Flowchart
+# Flowchart
  
+https://github.com/ngkerong/Assignment1-2/blob/master/Flowchart%201.PNG?raw=true
+
+
+
+
