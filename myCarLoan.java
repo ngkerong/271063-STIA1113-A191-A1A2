@@ -14,13 +14,13 @@ public class myCarLoan {
         System.out.println("CAR LOAN CALCULATOR\n");
         
         /*Input Car Loan,Down Payment, Loan Period and Interest Rate*/
-        System.out.print("Car Price(RM):");
+        System.out.print("Car Price(RM)\t\t\t:");
         A = input.nextFloat();
-        System.out.print("Down Payment(RM):");
+        System.out.print("Down Payment(RM)\t\t:");
         B = input.nextFloat();
-        System.out.print("Loan Period(Years):");
+        System.out.print("Loan Period(Years)\t:");
         C = input.nextFloat();
-        System.out.print("Interest Rate(%):");
+        System.out.print("Interest Rate(%)\t\t:");
         D = input.nextFloat();
         
         /*Looping*/
