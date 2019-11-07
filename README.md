@@ -83,5 +83,15 @@ End
  
 ![Flowchart](https://github.com/ngkerong/Assignment1-2/blob/master/Flowchart%201.PNG)
 
+![Flowchart](https://github.com/ngkerong/Assignment1-2/blob/master/Flowchart%202.PNG)
+
+![Flowchart](https://github.com/ngkerong/Assignment1-2/blob/master/Flowchart%203.PNG)
+
+![Flowchart](https://github.com/ngkerong/Assignment1-2/blob/master/Flowchart%204.PNG)
+
+# Output
+
+![output](https://github.com/ngkerong/Assignment1-2/blob/master/Output.PNG)
+
 
 
