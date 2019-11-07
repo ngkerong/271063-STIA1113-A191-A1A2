@@ -81,8 +81,7 @@ End
 
 # Flowchart
  
-https://github.com/ngkerong/Assignment1-2/blob/master/Flowchart%201.PNG?raw=true
-
+![Flowchart](https://github.com/ngkerong/Assignment1-2/blob/master/Flowchart%201.PNG)
 
 
 
