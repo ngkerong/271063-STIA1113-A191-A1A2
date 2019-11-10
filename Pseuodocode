@@ -27,7 +27,7 @@ Calculate Repayment = Principal /12
 	Output Repayment
 	Print “YEARS”, PRINCIPAL", "INTEREST", "BALANCE"
 	WHILE C is not equal to 0
-	            Calculate TotalPrinc = Principal + TotalPrinc
+	        Calculate TotalPrinc = Principal + TotalPrinc
             	Calculate TotalInte = Interest + TotalInte
             	Calculate Balance = (Principal * C) - Principal	
 	Output Years [i], TotalPrinc, TotalInte and Balance
