@@ -8,7 +8,7 @@ public class myCarLoan {
     public static void main(String[] args){
         
         Scanner input = new Scanner(System.in);
-        float A,B,C,D;
+        double A,B,C,D;
         
         /*Display*/
         System.out.println("CAR LOAN CALCULATOR\n");
@@ -37,9 +37,9 @@ public class myCarLoan {
         input.close();
     }
     
-    public static void CalculateLoan(float A, float B, float C, float D ){
+    public static void CalculateLoan(double A, double B, double C, double D ){
         
-        float Interest,Principal,Repayment,TotalPrinc=0,TotalInte=0,Balance=0;
+        double Interest,Principal,Repayment,TotalPrinc=0,TotalInte=0,Balance=0;
         String[] Years = {"1st","2nd","3rd","4th","5th","6th","7th","8th"};
         String format1 = "%40s\n%28s%.2f\n\n",
         format2 = "%10s-%15s-%15s-%15s\n",
@@ -64,7 +64,7 @@ public class myCarLoan {
             TotalPrinc = Principal + TotalPrinc;
             TotalInte = Interest + TotalInte;
             Balance = (Principal * C) - Principal;
-
+            
             /*Output Years, Principal, Interest, Balance*/
             System.out.printf(format3, Years[i], TotalPrinc, TotalInte, Balance);
 
